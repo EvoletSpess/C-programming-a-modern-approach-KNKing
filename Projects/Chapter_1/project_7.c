@@ -2,7 +2,8 @@
 
 int main() {
     // Initialization:
-    double loan, rate, payment;
+    int amount;
+    int twenties, tens, fives, singles;
 
     // Input:
     printf("Enter a dollar amount: ");
