@@ -1,11 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    int n;
-    scanf("%d", &n);
-    int n1, n2;
-    n1 = n % 10;
-    n2 = n / 10;
-    printf("%d%d", n1, n2);
-    return 0;
+    int m, d, y;
+    printf("Enter a date (mm/dd/yyyy): ");
+    scanf("%d/%d/%d", &m, &d, &y);
+    printf("You entered the date %d%.2d%.2d", y, m, d);
 }

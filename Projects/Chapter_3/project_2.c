@@ -1,12 +1,15 @@
 #include <stdio.h>
 
 int main() {
-    int n;
-    scanf("%d", &n);
-    int n1, n2, n3;
-    n1 = n % 10;
-    n2 = (n / 10) % 10;
-    n3 = n / 100;
-    printf("%d%d%d", n1, n2, n3);
-    return 0;
+    int item, d, m, y;
+    double price;
+
+    printf("Enter item number: ");
+    scanf("%d", &item);
+    printf("Enter unit price: ");
+    scanf("%lf", &price);
+    printf("Enter purchase date (mm/dd/yyyy): ");
+    scanf("%d/%d/%d", &m, &d, &y);
+    printf("\nItem\t\tUnit\t\tPurchase\n\t\tPrice\t\tDate\n");
+    printf("%d\t\t$%7.2lf\t%.2d/%.2d/%d\n", item, price, m, d, y);
 }
